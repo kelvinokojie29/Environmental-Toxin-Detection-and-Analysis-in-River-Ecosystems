@@ -1,0 +1,149 @@
+# Analysis Approach – Environmental Toxin Detection and Analysis in River Ecosystems
+
+**Author:** Okojie Kelvin Echiejile  
+**Project:** Environmental Toxin Detection and Analysis in River Ecosystems
+**Dataset:** National_River_Toxin.csv  
+
+---
+
+## 1. Objective
+
+This project demonstrates practical data analysis skills by applying exploratory data analysis (EDA), statistical techniques, and data visualisation to an environmental dataset. 
+The objective is to evaluate river water quality, identify toxin distribution patterns, detect potential environmental risks, and communicate actionable insights through clear and informative visualisations.
+---
+
+## 2. Dataset Overview
+
+- **Source File:** `National_River_Toxin.csv`
+- **Records:** 1,305 observations
+- **Time Period:** 2018 – 2023
+- **Key Variables:**
+  - Date
+  - River_System
+  - pH_Level
+  - Temperature
+  - Lead
+  - Mercury
+  - Arsenic
+  - Nitrates
+  - Phosphates
+  - Dissolved_Oxygen
+
+---
+
+## 3. Analysis Workflow
+
+### Step 1: Environment Setup & Imports
+Required libraries were imported for data manipulation, visualization, and statistical analysis:
+
+- `pandas` & `numpy` → data handling
+- `matplotlib` & `seaborn` → visualization
+- `scipy.stats` → hypothesis testing
+- `sklearn.linear_model` → linear regression
+- `statsmodels` → time-series decomposition
+
+### Step 2: Data Loading
+The National_River_Toxin dataset was imported using Pandas' pd.read_csv() function, providing a structured foundation for data cleaning, exploration, and visualisation
+
+### Step 3: Initial Exploratory Data Exploration
+- Reviewed the dataset's initial records using .head(30) to gain an understanding of its contents.
+- Examined data types, completeness, and summary statistics with .info() and .describe().
+- Assessed the dataset's dimensions and overall structure to support subsequent analysis using .shape.
+
+### Step 4: Missing and Duplicated Value Handling
+- Conducted data quality checks to identify missing values throughout the dataset using df.isnull().sum() and df.duplicated(). 
+- Imputed missing entries in numeric columns using appropriate statistical methods, 
+  maintaining the original structure and reliability of categorical and date-based attributes.
+
+### Step 5: Data Type Conversion
+- Standardised the Date column by converting it from an object data type to datetime format, 
+  allowing for effective time-based analysis and visual representation of trends.
+
+### Step 6: Descriptive Statistics – Average Toxin Levels
+Calculated the mean values of key water quality and environmental indicators, including pH, temperature, toxin concentrations (Lead, Mercury, and Arsenic), nutrient levels, and dissolved oxygen. 
+These averages provide a baseline understanding of overall river system conditions across the dataset.
+
+**Key Observation:**
+Arsenic recorded the highest average concentration (3.60), followed by Lead (3.01), while Mercury exhibited the lowest average level (0.60), 
+indicating that arsenic is the most prevalent heavy metal contaminant across the sampled river systems.
+
+### Step 7: Ranking Most Polluted River Systems
+Grouped the data by `River_System` and calculated average Lead concentrations. 
+
+**Key Observation:**
+- Yangtze and Nile ranked highest in average Lead levels with 6.91 and 6.78 toxin averages.
+- Amazon showed relatively lower Lead concentrations with a 6.30 toxin average. 
+- A correlation analysis was conducted to assess the relationship between pH levels and pollutant concentrations. 
+- The results revealed that Lead exhibited the strongest positive correlation with pH (r = 0.325), indicating a moderate association between increasing pH levels and lead concentrations. 
+- In contrast, Mercury (r = 0.141), Nitrates (r = 0.084), Phosphates (r = 0.091), and Arsenic (r = 0.043) showed weak to negligible correlations, suggesting that pH has limited influence on these environmental contaminants within the sampled river systems
+
+### Step 8: Visualization of Average Lead Levels
+- Created a bar chart to compare average Lead concentrations across river systems.
+- Highlighted variations in pollution levels, helping identify the most contaminated rivers.
+- The chart shows that Nitrates have the highest average concentration across all river systems, while Mercury and Phosphates have the lowest levels. 
+- The Yangtze River exhibits the highest concentrations of Lead and Arsenic, indicating comparatively higher pollution levels among the rivers analysed.
+
+### Step 9: Time-Series Analysis (2018–2023)
+- Visualised toxin concentrations over time using line charts to identify trends, patterns, and fluctuations across the study period.
+- Enabled the detection of long-term changes and potential pollution spikes in river systems.
+
+### Step 10: Heat Map Correlation between Toxins and pH Level
+- Lead showed the strongest relationship with pH (r = 0.33), while Mercury, Arsenic, Nitrates, and Phosphates exhibited only weak correlations.
+- Mercury and Arsenic were strongly correlated (r = 0.70), suggesting these heavy metals frequently occur together in the sampled river systems. 
+
+### Step 11: Box Plot: Toxin Levels by Season
+- The box plot shows that pollution scores are relatively consistent across seasons, with Spring recording the highest median pollution level and Autumn the lowest.
+- Several outliers are present in every season, indicating occasional spikes or unusually low pollution events that deviate from typical conditions.
+
+### Step 12: Hypothesis Testing (T-Test)
+Performed an independent two-sample t-test comparing Lead levels between the **Nile** and **Yangtze** river systems.
+A t-test comparing the Nile and Yangtze Rivers produced a statistically significant result (t = -5.755, p < 0.001), 
+indicating that pollution levels differ significantly between the two river systems.
+The regression analysis found a significant positive relationship between pH and Pollution Score (β = 0.343, p < 0.001), suggesting that pollution scores tend to increase as pH levels rise. 
+However, the low R² value (0.034) indicates that pH explains only about 3.4% of the variation in pollution levels, implying that other environmental factors play a much larger role.
+
+### Step 13: Conclusion & Interpretation
+Most polluted systems: Yangtze, Nile, and Mississippi show the highest average Pollution_Score, with Yangtze at the top.
+Toxin–pH relationship: Correlations between pH and individual toxins (Lead, Mercury, Arsenic, Nitrates, Phosphates) are positive but modest (roughly 𝑟 ≈ 0.04 – 0.33 ), suggesting pH is related to toxin levels but is far from the only driver.
+Seasonality: Once your seasonal box plot is working, you’ll likely see certain seasons (often warmer months) showing higher median pollution scores, reflecting increased runoff, agricultural activity, or lower dilution.
+Your t-test will tell you whether differences in mean Pollution_Score between two rivers are statistically significant, and the regression will show whether pH is a meaningful predictor of overall toxin burden.
+
+Synthesized all findings into clear insights:
+- Confirmed structural differences in pollutant burdens across river basins
+- Highlighted the need for localized environmental management strategies rather than generalized approaches
+- Emphasized the value of continuous monitoring of heavy metals and nutrients
+
+---
+
+## 4. Tools & Techniques Used
+
+| Technique                        | Purpose                                      |
+|----------------------------------|----------------------------------------------|
+| Descriptive Statistics           | Baseline understanding of toxin levels       |
+| GroupBy Aggregation              | Compare river systems                        |
+| Bar Charts & Line Graphs         | Visual communication of findings             |
+| Independent Two-Sample T-Test    | Test for significant differences             |
+| Linear Regression                | Explore relationship between pH and Lead     |
+| Missing Value Imputation         | Ensure data quality                          |
+| Datetime Conversion              | Enable temporal analysis                     |
+
+---
+
+## 5. Key Takeaways from the Approach
+
+1. **Data Quality First** – Cleaning and handling missing values was performed early to ensure reliable results.
+2. **Progressive Analysis** – Started with global averages → moved to system-level comparisons → applied statistical tests.
+3. **Visualization + Statistics** – Combined visual storytelling with rigorous statistical testing.
+4. **Actionable Insights** – Focused on findings that support real-world environmental decision-making.
+
+---
+
+## 6. Files Related to This Analysis
+
+- Full interactive analysis: `Notebooks/Environmental Toxin Analysis in River Systems.ipynb`
+- Visualization screenshots: `Assets/`
+- Cleaned dataset: `Dataset/Clean/National_River_Toxin.csv`
+
+---
+
+*This document outlines the structured analytical approach followed throughout the project.*
