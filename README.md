@@ -16,7 +16,7 @@
 https://github.com/kelvinokojie29/Environmental-Toxin-Detection-and-Analysis-in-River-Ecosystems/blob/main/Assets/Correlation%20Between%20pH%20Level%20and%20Toxins.png
 *Relationships between toxins, pH, temperature, and dissolved oxygen* -->
 
-<!-- ![Toxin Levels by Season](Assets/seasonal-boxplot.png)
+https://github.com/kelvinokojie29/Environmental-Toxin-Detection-and-Analysis-in-River-Ecosystems/blob/main/Assets/Toxin%20Levels%20by%20Season.png
 *Box plot showing pollution variation across seasons* --> 
 
 ---
