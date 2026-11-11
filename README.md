@@ -8,7 +8,7 @@
 - **Top Finding:** Yangtze & Nile show significantly higher heavy metal concentrations; Mercury and Arsenic co-occur strongly (r = 0.70)
 - **Impact:** Informs targeted monitoring and pollution mitigation strategies for river management
 
--## 📈 Visual Insights
+## 📈 Visual Insights
 
 <!-- ![Toxin Concentrations by River System] (https://github.com/kelvinokojie29/Environmental-Toxin-Detection-and-Analysis-in-River-Ecosystems/blob/main/Assets/Average%20Toxin%20Levels%20by%20River%20System.png)
 *Bar chart comparing average Lead, Arsenic, and Mercury levels across river systems* -->
