@@ -10,9 +10,7 @@
 
 -## 📈 Visual Insights
 
-*(Upload your charts to the `Assets/` folder first, then uncomment and update the filenames below)*
-
-<!-- ![Toxin Concentrations by River System](Assets/toxin-by-river.png)
+<!-- ![Toxin Concentrations by River System] (https://github.com/kelvinokojie29/Environmental-Toxin-Detection-and-Analysis-in-River-Ecosystems/blob/main/Assets/Average%20Toxin%20Levels%20by%20River%20System.png)
 *Bar chart comparing average Lead, Arsenic, and Mercury levels across river systems* -->
 
 <!-- ![Correlation Heatmap](Assets/correlation-heatmap.png)
