@@ -10,14 +10,15 @@
 
 ## 📈 Visual Insights
 
-(https://github.com/kelvinokojie29/Environmental-Toxin-Detection-and-Analysis-in-River-Ecosystems/blob/main/Assets/Average%20Toxin%20Levels%20by%20River%20System.png)
-*Bar chart comparing average Lead, Arsenic, and Mercury levels across river systems* -->
+![Average Toxin Levels by River System](Assets/Average%20Toxin%20Levels%20by%20River%20System.png)
+*Bar chart comparing average Lead, Arsenic, and Mercury levels across river systems*
 
-https://github.com/kelvinokojie29/Environmental-Toxin-Detection-and-Analysis-in-River-Ecosystems/blob/main/Assets/Correlation%20Between%20pH%20Level%20and%20Toxins.png
-*Relationships between toxins, pH, temperature, and dissolved oxygen* -->
+![Correlation Between pH Level and Toxins](Assets/Correlation%20Between%20pH%20Level%20and%20Toxins.png)
+*Relationships between toxins, pH, temperature, and dissolved oxygen*
 
-https://github.com/kelvinokojie29/Environmental-Toxin-Detection-and-Analysis-in-River-Ecosystems/blob/main/Assets/Toxin%20Levels%20by%20Season.png
-*Box plot showing pollution variation across seasons* --> 
+![Toxin Levels by Season](Assets/Toxin%20Levels%20by%20Season.png)
+*Box plot showing pollution variation across seasons*
+
 
 ---
 
