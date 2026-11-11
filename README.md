@@ -94,7 +94,7 @@
 ## 📚 Full Documentation
 
 - 📖 **[Detailed Analysis Approach & Methodology](Doc/Analysis_Approach)** — Step-by-step workflow, code logic, and statistical explanations
-- 📓 **Interactive Jupyter Notebook** → `[Notebooks/Environmental-Toxin-Detection-and-Analysis-in-River-Ecosystems/blob/main/Doc/Environmental%20Project.ipynb)`
+- 📓 **Interactive Jupyter Notebook** → (https://github.com/kelvinokojie29/Environmental-Toxin-Detection-and-Analysis-in-River-Ecosystems/blob/main/Doc/Environmental%20Project.ipynb)`
 - — Full Python code, visualisations, and outputs
 
 ---
